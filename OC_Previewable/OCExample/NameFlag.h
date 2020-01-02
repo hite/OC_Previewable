@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NameFlag: UILabel
+@interface NameFlag: UIView
+
+- (void)configureWithImageName:(NSString *)imageName name:(NSString *)name;
 
 @end
 
