@@ -31,7 +31,7 @@
         avatar.contentMode = UIViewContentModeScaleAspectFit;
         avatar.clipsToBounds = YES;
         [self addSubview:avatar];
-        avatar.layer.borderColor = [UIColor redColor].CGColor;
+        avatar.layer.borderColor = [UIColor greenColor].CGColor;
         avatar.layer.borderWidth = 1;
             
         avatar.translatesAutoresizingMaskIntoConstraints = NO;
@@ -56,7 +56,7 @@
         ]];
         
         UITextField *feedback = [UITextField new];
-        feedback.placeholder = @"输入你的意见:";
+        feedback.placeholder = @"这里输入的内容会不会因为 hotreload 而丢失？";
         feedback.textColor = [UIColor  systemGrayColor];
         feedback.font = [UIFont systemFontOfSize:16];
         if (@available(iOS 13.0, *)) {

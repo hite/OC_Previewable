@@ -22,9 +22,9 @@ struct UIViewController_Preview: PreviewProvider, UIViewControllerRepresentable 
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<UIViewController_Preview>) -> UIViewController {
         let vc = MyViewController()
-//        vc.title = "标题"
-//        let nav = UINavigationController(rootViewController: vc)
-        return vc
+        vc.title = "下面是小鸡或者小鸭子的图形"
+        let nav = UINavigationController(rootViewController: vc)
+        return nav
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<UIViewController_Preview>) {

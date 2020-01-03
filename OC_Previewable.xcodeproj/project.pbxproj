@@ -18,7 +18,7 @@
 		48B8F5D523BED70D00EDDBBE /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D023BED70D00EDDBBE /* UIViewPreview.swift */; };
 		48B8F5D623BED70D00EDDBBE /* UIView_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D223BED70D00EDDBBE /* UIView_Preview.swift */; };
 		48B8F5D723BED70D00EDDBBE /* UIViewController_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D423BED70D00EDDBBE /* UIViewController_Preview.swift */; };
-		48B8F5DC23BF2A0C00EDDBBE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B8F5DB23BF2A0B00EDDBBE /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		48B8F5DD23BF401B00EDDBBE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B8F5DB23BF2A0B00EDDBBE /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B8F5DC23BF2A0C00EDDBBE /* SwiftUI.framework in Frameworks */,
+				48B8F5DD23BF401B00EDDBBE /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = OC_Previewable/PreviewSupport;
 				INFOPLIST_FILE = OC_Previewable/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = OC_Previewable/PreviewSupport;
 				INFOPLIST_FILE = OC_Previewable/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

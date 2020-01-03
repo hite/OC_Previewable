@@ -16,7 +16,7 @@ struct UIView_Preview: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
             let name = NameFlag()
-            name.configure(withImageName: "duck", name: "小鸡之家，红色表带, 哈哈哈")
+            name.configure(withImageName: "duck", name: "小鸭子和绿色边框")
             return name
         }.padding()
     }

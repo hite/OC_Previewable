@@ -21,7 +21,7 @@
     
     NameFlag *name = [NameFlag new];
     name.frame = CGRectMake(10, 100, 200, 300);
-//    name.backgroundColor = [UIColor yellowColor];
+    [name configureWithImageName:@"chick" name:@"小鸡球球的画像"];
     [self.view addSubview:name];
 }
 
