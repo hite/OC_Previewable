@@ -59,7 +59,11 @@
         feedback.placeholder = @"输入你的意见:";
         feedback.textColor = [UIColor  systemGrayColor];
         feedback.font = [UIFont systemFontOfSize:16];
-        feedback.layer.borderColor = [UIColor systemGray3Color].CGColor;
+        if (@available(iOS 13.0, *)) {
+            feedback.layer.borderColor = [UIColor systemGray3Color].CGColor;
+        } else {
+            // Fallback on earlier versions
+        }
         feedback.layer.borderWidth = 1;
         [self addSubview:feedback];
         

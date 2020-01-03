@@ -18,6 +18,7 @@
 		48B8F5D523BED70D00EDDBBE /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D023BED70D00EDDBBE /* UIViewPreview.swift */; };
 		48B8F5D623BED70D00EDDBBE /* UIView_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D223BED70D00EDDBBE /* UIView_Preview.swift */; };
 		48B8F5D723BED70D00EDDBBE /* UIViewController_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B8F5D423BED70D00EDDBBE /* UIViewController_Preview.swift */; };
+		48B8F5DC23BF2A0C00EDDBBE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B8F5DB23BF2A0B00EDDBBE /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		48B8F5D223BED70D00EDDBBE /* UIView_Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Preview.swift; sourceTree = "<group>"; };
 		48B8F5D323BED70D00EDDBBE /* OC_Previewable-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_Previewable-Bridging-Header.h"; sourceTree = "<group>"; };
 		48B8F5D423BED70D00EDDBBE /* UIViewController_Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_Preview.swift; sourceTree = "<group>"; };
+		48B8F5DB23BF2A0B00EDDBBE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B8F5DC23BF2A0C00EDDBBE /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				4893705023BB24F9005D1C88 /* OC_Previewable */,
 				4893704F23BB24F9005D1C88 /* Products */,
+				48B8F5D823BF29D800EDDBBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +85,7 @@
 				4893705A23BB24F9005D1C88 /* Main.storyboard */,
 				4893705D23BB24FB005D1C88 /* Assets.xcassets */,
 				4893705F23BB24FB005D1C88 /* LaunchScreen.storyboard */,
+				48B8F5D323BED70D00EDDBBE /* OC_Previewable-Bridging-Header.h */,
 				4893706223BB24FB005D1C88 /* Info.plist */,
 				4893706323BB24FB005D1C88 /* main.m */,
 			);
@@ -105,9 +110,16 @@
 				48B8F5D423BED70D00EDDBBE /* UIViewController_Preview.swift */,
 				48B8F5D023BED70D00EDDBBE /* UIViewPreview.swift */,
 				48B8F5D123BED70D00EDDBBE /* Preview-Header.h */,
-				48B8F5D323BED70D00EDDBBE /* OC_Previewable-Bridging-Header.h */,
 			);
 			path = PreviewSupport;
+			sourceTree = "<group>";
+		};
+		48B8F5D823BF29D800EDDBBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B8F5DB23BF2A0B00EDDBBE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,14 +344,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = OC_Previewable/PreviewSupport;
 				INFOPLIST_FILE = OC_Previewable/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hite.app.OC-Previewable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "OC_Previewable/PreviewSupport/OC_Previewable-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OC_Previewable/OC_Previewable-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,14 +366,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = OC_Previewable/PreviewSupport;
 				INFOPLIST_FILE = OC_Previewable/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hite.app.OC-Previewable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "OC_Previewable/PreviewSupport/OC_Previewable-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OC_Previewable/OC_Previewable-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

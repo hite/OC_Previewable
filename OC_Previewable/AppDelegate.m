@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "MyViewController.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) UIWindow *myWindow;
 @end
 
 @implementation AppDelegate
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (@available(iOS 13.0, *)) {
+
+    } else {
+        UIWindow *window = [UIWindow new];
+        window.rootViewController = [MyViewController new];
+        [window makeKeyAndVisible];
+        window.backgroundColor = [UIColor whiteColor];
+        self.myWindow = window;
+    }
     return YES;
 }
 
