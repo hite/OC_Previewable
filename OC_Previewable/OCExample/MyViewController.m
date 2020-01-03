@@ -7,6 +7,7 @@
 //
 
 #import "MyViewController.h"
+#import "NameFlag.h"
 
 @interface MyViewController ()
 
@@ -17,12 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor greenColor];
     
-    UILabel *name = [UILabel new];
-    name.text = @"大型文件不行？";
-    name.font = [UIFont systemFontOfSize:12];
-    [name sizeToFit];
+    NameFlag *name = [NameFlag new];
+    name.frame = CGRectMake(10, 100, 200, 300);
+//    name.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:name];
 }
 

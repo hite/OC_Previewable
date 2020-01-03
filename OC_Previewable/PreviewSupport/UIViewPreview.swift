@@ -1,17 +1,16 @@
 //
-//  View_Preview.swift
-//  OC_Previewable
+//  UIViewPreview.swift
+//  AppHostExample
 //
-//  Created by liang on 2019/12/31.
-//  Copyright © 2019 liang. All rights reserved.
+//  Created by liang on 2020/1/2.
+//  Copyright © 2020 liang. All rights reserved.
 //
+
 import Foundation
-
-import SwiftUI
-
 #if canImport(SwiftUI)
 
 import SwiftUI
+
 struct UIViewPreview<View: UIView>: UIViewRepresentable {
     typealias UIViewType = UIView
 
@@ -28,16 +27,6 @@ struct UIViewPreview<View: UIView>: UIViewRepresentable {
     func updateUIView(_ view: UIView, context: Context) {
         view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         view.setContentHuggingPriority(.defaultHigh, for: .vertical)
-    }
-}
-
-@available(iOS 13.0, *)
-struct View_Preview: PreviewProvider {
-    static var previews: some View {
-        UIViewPreview {
-            let sv = SwiftView()
-            return sv
-        }
     }
 }
 
