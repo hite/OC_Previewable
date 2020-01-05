@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NameFlag: UIView
 
-- (void)configureWithImageName:(NSString *)imageName name:(NSString *)name;
+- (void)configureWithImageName:(NSString *)imageName name:(NSString *)name count:(NSInteger)count;
 
 @end
 

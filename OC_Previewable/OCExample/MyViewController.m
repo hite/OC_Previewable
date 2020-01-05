@@ -8,6 +8,7 @@
 
 #import "MyViewController.h"
 #import "NameFlag.h"
+#import <UIKit/UIKit.h>
 
 @interface MyViewController ()
 
@@ -20,8 +21,9 @@
     // Do any additional setup after loading the view.
     
     NameFlag *name = [NameFlag new];
-    name.frame = CGRectMake(10, 100, 200, 300);
-    [name configureWithImageName:@"chick" name:@"小鸡球球的画像"];
+    name.frame = CGRectMake(10, 100, 400, 300);
+
+    [name configureWithImageName:@"duck" name:[NSString stringWithFormat:@"%@- ", self.navigationController.viewControllers[0]] count:3];
     [self.view addSubview:name];
 }
 

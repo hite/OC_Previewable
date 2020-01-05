@@ -45,6 +45,7 @@
         
         UILabel *name = [UILabel new];
         self.name = name;
+        name.numberOfLines = -1;
         name.font = [UIFont systemFontOfSize:20];
         name.textColor = [UIColor darkTextColor];
         name.translatesAutoresizingMaskIntoConstraints = NO;
@@ -77,9 +78,9 @@
     return self;
 }
 
-- (void)configureWithImageName:(NSString *)imageName name:(NSString *)name{
+- (void)configureWithImageName:(NSString *)imageName name:(NSString *)name count:(NSInteger)count{
     self.avatar.image = [UIImage imageNamed:imageName];
-    self.name.text = name;
+    self.name.text = [NSString stringWithFormat:@"%ld 只%@", count, name];
 }
 
 

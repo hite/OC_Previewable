@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 #if canImport(SwiftUI)
 
 import SwiftUI
@@ -15,8 +15,9 @@ import SwiftUI
 struct UIView_Preview: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
+    let bundleIdentifier =  Bundle.main.bundleIdentifier
             let name = NameFlag()
-            name.configure(withImageName: "duck", name: "小鸭子和绿色边框")
+            name.configure(withImageName: "duck", name: bundleIdentifier ?? "?o", count: 2)
             return name
         }.padding()
     }
